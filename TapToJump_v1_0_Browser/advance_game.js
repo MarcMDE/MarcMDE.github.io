@@ -178,7 +178,7 @@ Module['FS_createPath']('/assets', 'title_screen', true, true);
   }
 
  }
- loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 6210, "filename": "/assets/gameplay_screen/bg_main.png"}, {"audio": 0, "start": 6210, "crunched": 0, "end": 6748, "filename": "/assets/gameplay_screen/cube_blue(debugRotationPoint).png"}, {"audio": 0, "start": 6748, "crunched": 0, "end": 7375, "filename": "/assets/gameplay_screen/cube_main.png"}, {"audio": 0, "start": 7375, "crunched": 0, "end": 7851, "filename": "/assets/gameplay_screen/debug.png"}, {"audio": 0, "start": 7851, "crunched": 0, "end": 8338, "filename": "/assets/gameplay_screen/particle_main.png"}, {"audio": 0, "start": 8338, "crunched": 0, "end": 8970, "filename": "/assets/gameplay_screen/platform_main.png"}, {"audio": 0, "start": 8970, "crunched": 0, "end": 10099, "filename": "/assets/gameplay_screen/triangle_main.png"}, {"audio": 0, "start": 10099, "crunched": 0, "end": 34155, "filename": "/assets/gameplay_screen/maps/map.bmp"}, {"audio": 1, "start": 34155, "crunched": 0, "end": 1723734, "filename": "/assets/gameplay_screen/music/Flash_Funk_MarshmelloRemix.ogg"}, {"audio": 0, "start": 1723734, "crunched": 0, "end": 1725107, "filename": "/assets/logo_screen/PixelBar_Logo.png"}, {"audio": 0, "start": 1725107, "crunched": 0, "end": 1725692, "filename": "/assets/title_screen/title_main.png"}], "remote_package_size": 1725692, "package_uuid": "a4cd2aba-600e-40ab-b6ea-e534228ff5a1"});
+ loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 6210, "filename": "/assets/gameplay_screen/bg_main.png"}, {"audio": 0, "start": 6210, "crunched": 0, "end": 6748, "filename": "/assets/gameplay_screen/cube_blue(debugRotationPoint).png"}, {"audio": 0, "start": 6748, "crunched": 0, "end": 7375, "filename": "/assets/gameplay_screen/cube_main.png"}, {"audio": 0, "start": 7375, "crunched": 0, "end": 7851, "filename": "/assets/gameplay_screen/debug.png"}, {"audio": 0, "start": 7851, "crunched": 0, "end": 8338, "filename": "/assets/gameplay_screen/particle_main.png"}, {"audio": 0, "start": 8338, "crunched": 0, "end": 8970, "filename": "/assets/gameplay_screen/platform_main.png"}, {"audio": 0, "start": 8970, "crunched": 0, "end": 10099, "filename": "/assets/gameplay_screen/triangle_main.png"}, {"audio": 0, "start": 10099, "crunched": 0, "end": 34155, "filename": "/assets/gameplay_screen/maps/map.bmp"}, {"audio": 1, "start": 34155, "crunched": 0, "end": 1723734, "filename": "/assets/gameplay_screen/music/Flash_Funk_MarshmelloRemix.ogg"}, {"audio": 0, "start": 1723734, "crunched": 0, "end": 1725107, "filename": "/assets/logo_screen/PixelBar_Logo.png"}, {"audio": 0, "start": 1725107, "crunched": 0, "end": 1725692, "filename": "/assets/title_screen/title_main.png"}], "remote_package_size": 1725692, "package_uuid": "11cb4d3e-b562-4419-adce-9250d9e6c5bd"});
 
 })();
 
@@ -10121,7 +10121,6 @@ function _main() {
  _InitWindow(800,450,9040);
  HEAP32[96>>2] = 0;
  _InitLogoScreen();
- _InitAudioDevice();
  _emscripten_set_main_loop((1|0),0,1);
  _CloseWindow();
  return 0;
@@ -10350,6 +10349,7 @@ function _UpdateTransition() {
    _InitGameplayScreen();
    _UnloadGameplayScreen();
   }
+  _InitAudioDevice();
   _InitGameplayScreen();
   HEAP32[96>>2] = 3;
   break;
