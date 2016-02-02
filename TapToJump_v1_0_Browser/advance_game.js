@@ -178,7 +178,7 @@ Module['FS_createPath']('/assets', 'title_screen', true, true);
   }
 
  }
- loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 6210, "filename": "/assets/gameplay_screen/bg_main.png"}, {"audio": 0, "start": 6210, "crunched": 0, "end": 6748, "filename": "/assets/gameplay_screen/cube_blue(debugRotationPoint).png"}, {"audio": 0, "start": 6748, "crunched": 0, "end": 7375, "filename": "/assets/gameplay_screen/cube_main.png"}, {"audio": 0, "start": 7375, "crunched": 0, "end": 7851, "filename": "/assets/gameplay_screen/debug.png"}, {"audio": 0, "start": 7851, "crunched": 0, "end": 8338, "filename": "/assets/gameplay_screen/particle_main.png"}, {"audio": 0, "start": 8338, "crunched": 0, "end": 8970, "filename": "/assets/gameplay_screen/platform_main.png"}, {"audio": 0, "start": 8970, "crunched": 0, "end": 10099, "filename": "/assets/gameplay_screen/triangle_main.png"}, {"audio": 0, "start": 10099, "crunched": 0, "end": 34155, "filename": "/assets/gameplay_screen/maps/map.bmp"}, {"audio": 1, "start": 34155, "crunched": 0, "end": 1723734, "filename": "/assets/gameplay_screen/music/Flash_Funk_MarshmelloRemix.ogg"}, {"audio": 0, "start": 1723734, "crunched": 0, "end": 1725107, "filename": "/assets/logo_screen/PixelBar_Logo.png"}, {"audio": 0, "start": 1725107, "crunched": 0, "end": 1725692, "filename": "/assets/title_screen/title_main.png"}], "remote_package_size": 1725692, "package_uuid": "e97d0f0d-55d5-4572-bcae-abd3d41f3499"});
+ loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 6210, "filename": "/assets/gameplay_screen/bg_main.png"}, {"audio": 0, "start": 6210, "crunched": 0, "end": 6748, "filename": "/assets/gameplay_screen/cube_blue(debugRotationPoint).png"}, {"audio": 0, "start": 6748, "crunched": 0, "end": 7375, "filename": "/assets/gameplay_screen/cube_main.png"}, {"audio": 0, "start": 7375, "crunched": 0, "end": 7851, "filename": "/assets/gameplay_screen/debug.png"}, {"audio": 0, "start": 7851, "crunched": 0, "end": 8338, "filename": "/assets/gameplay_screen/particle_main.png"}, {"audio": 0, "start": 8338, "crunched": 0, "end": 8970, "filename": "/assets/gameplay_screen/platform_main.png"}, {"audio": 0, "start": 8970, "crunched": 0, "end": 10099, "filename": "/assets/gameplay_screen/triangle_main.png"}, {"audio": 0, "start": 10099, "crunched": 0, "end": 34155, "filename": "/assets/gameplay_screen/maps/map.bmp"}, {"audio": 1, "start": 34155, "crunched": 0, "end": 1723734, "filename": "/assets/gameplay_screen/music/Flash_Funk_MarshmelloRemix.ogg"}, {"audio": 0, "start": 1723734, "crunched": 0, "end": 1725107, "filename": "/assets/logo_screen/PixelBar_Logo.png"}, {"audio": 0, "start": 1725107, "crunched": 0, "end": 1725692, "filename": "/assets/title_screen/title_main.png"}], "remote_package_size": 1725692, "package_uuid": "2e1c1f73-1146-40a3-be3d-614d059e0e57"});
 
 })();
 
@@ -12955,8 +12955,9 @@ function _Vector2Up($agg$result) {
  return;
 }
 function _UpdateResetGameplay() {
- var $$byval_copy = 0, $$byval_copy3 = 0, $0 = 0, $1 = 0, $10 = 0, $11 = 0, $12 = 0, $13 = 0, $14 = 0, $15 = 0, $16 = 0.0, $17 = 0, $18 = 0, $19 = 0, $2 = 0, $20 = 0.0, $3 = 0, $4 = 0, $5 = 0, $6 = 0;
- var $7 = 0.0, $8 = 0, $9 = 0.0, label = 0, sp = 0;
+ var $$byval_copy = 0, $$byval_copy3 = 0, $0 = 0, $1 = 0, $10 = 0, $11 = 0, $12 = 0, $13 = 0, $14 = 0, $15 = 0, $16 = 0.0, $17 = 0, $18 = 0, $19 = 0, $2 = 0, $20 = 0, $21 = 0, $22 = 0, $23 = 0, $24 = 0;
+ var $25 = 0, $26 = 0, $27 = 0, $28 = 0, $29 = 0, $3 = 0, $30 = 0, $31 = 0, $32 = 0, $33 = 0, $34 = 0, $35 = 0, $36 = 0, $37 = 0, $38 = 0.0, $4 = 0, $5 = 0, $6 = 0, $7 = 0.0, $8 = 0;
+ var $9 = 0.0, $i$04 = 0, $i1$03 = 0, label = 0, sp = 0;
  sp = STACKTOP;
  STACKTOP = STACKTOP + 64|0; if ((STACKTOP|0) >= (STACK_MAX|0)) abort();
  $$byval_copy3 = sp + 56|0;
@@ -12973,10 +12974,10 @@ function _UpdateResetGameplay() {
  $6 = ($5|0)==(0);
  $7 = +HEAPF32[544>>2];
  if ($6) {
-  $19 = $7 > 0.0;
-  if ($19) {
-   $20 = $7 + -0.10000000149011612;
-   HEAPF32[544>>2] = $20;
+  $37 = $7 > 0.0;
+  if ($37) {
+   $38 = $7 + -0.10000000149011612;
+   HEAPF32[544>>2] = $38;
    STACKTOP = sp;return;
   } else {
    HEAPF32[544>>2] = 0.0;
@@ -12985,47 +12986,90 @@ function _UpdateResetGameplay() {
    HEAP32[536>>2] = 0;
    STACKTOP = sp;return;
   }
- } else {
-  $8 = $7 < 1.0;
-  if ($8) {
-   $9 = $7 + 0.02500000037252903;
-   HEAPF32[544>>2] = $9;
-   STACKTOP = sp;return;
-  } else {
-   HEAPF32[544>>2] = 1.0;
-   HEAP32[548>>2] = 0;
-   _Vector2Right($0);
-   $10 = ((($0)) + 8|0);
-   HEAPF32[$10>>2] = 6.5;
-   $11 = ((($0)) + 12|0);
-   HEAPF32[$11>>2] = 6.5;
-   $12 = ((($0)) + 16|0);
-   _Vector2Zero($12);
-   $13 = ((($0)) + 24|0);
-   HEAP32[$13>>2] = 1;
-   ;HEAP32[552>>2]=HEAP32[$0>>2]|0;HEAP32[552+4>>2]=HEAP32[$0+4>>2]|0;HEAP32[552+8>>2]=HEAP32[$0+8>>2]|0;HEAP32[552+12>>2]=HEAP32[$0+12>>2]|0;HEAP32[552+16>>2]=HEAP32[$0+16>>2]|0;HEAP32[552+20>>2]=HEAP32[$0+20>>2]|0;HEAP32[552+24>>2]=HEAP32[$0+24>>2]|0;
-   $14 = HEAP32[592>>2]|0;
-   $15 = (($14) + -1)|0;
-   $16 = (+($15|0));
-   HEAPF32[$1>>2] = 4.0;
-   $17 = ((($1)) + 4|0);
-   HEAPF32[$17>>2] = $16;
-   HEAPF32[$2>>2] = 0.0;
-   $18 = ((($2)) + 4|0);
-   HEAPF32[$18>>2] = 15.0;
-   ;HEAP32[$$byval_copy>>2]=HEAP32[$1>>2]|0;HEAP32[$$byval_copy+4>>2]=HEAP32[$1+4>>2]|0;
-   ;HEAP32[$$byval_copy3>>2]=HEAP32[$2>>2]|0;HEAP32[$$byval_copy3+4>>2]=HEAP32[$2+4>>2]|0;
-   _InitializePlayer(228,$$byval_copy,$$byval_copy3,21);
-   _StopMusicStream();
-   ;HEAP32[$$byval_copy3>>2]=HEAP32[(568)>>2]|0;HEAP32[$$byval_copy3+4>>2]=HEAP32[(568)+4>>2]|0;
-   _UpdateTrianglesPosition($$byval_copy3);
-   _UpdateTrianglesState();
-   ;HEAP32[$$byval_copy3>>2]=HEAP32[(568)>>2]|0;HEAP32[$$byval_copy3+4>>2]=HEAP32[(568)+4>>2]|0;
-   _UpdatePlatformsPosition($$byval_copy3);
-   _UpdatePlatformsState();
-   STACKTOP = sp;return;
+ }
+ $8 = $7 < 1.0;
+ if ($8) {
+  $9 = $7 + 0.02500000037252903;
+  HEAPF32[544>>2] = $9;
+  STACKTOP = sp;return;
+ }
+ HEAPF32[544>>2] = 1.0;
+ HEAP32[548>>2] = 0;
+ _Vector2Right($0);
+ $10 = ((($0)) + 8|0);
+ HEAPF32[$10>>2] = 6.5;
+ $11 = ((($0)) + 12|0);
+ HEAPF32[$11>>2] = 6.5;
+ $12 = ((($0)) + 16|0);
+ _Vector2Zero($12);
+ $13 = ((($0)) + 24|0);
+ HEAP32[$13>>2] = 1;
+ ;HEAP32[552>>2]=HEAP32[$0>>2]|0;HEAP32[552+4>>2]=HEAP32[$0+4>>2]|0;HEAP32[552+8>>2]=HEAP32[$0+8>>2]|0;HEAP32[552+12>>2]=HEAP32[$0+12>>2]|0;HEAP32[552+16>>2]=HEAP32[$0+16>>2]|0;HEAP32[552+20>>2]=HEAP32[$0+20>>2]|0;HEAP32[552+24>>2]=HEAP32[$0+24>>2]|0;
+ $14 = HEAP32[592>>2]|0;
+ $15 = (($14) + -1)|0;
+ $16 = (+($15|0));
+ HEAPF32[$1>>2] = 4.0;
+ $17 = ((($1)) + 4|0);
+ HEAPF32[$17>>2] = $16;
+ HEAPF32[$2>>2] = 0.0;
+ $18 = ((($2)) + 4|0);
+ HEAPF32[$18>>2] = 15.0;
+ ;HEAP32[$$byval_copy>>2]=HEAP32[$1>>2]|0;HEAP32[$$byval_copy+4>>2]=HEAP32[$1+4>>2]|0;
+ ;HEAP32[$$byval_copy3>>2]=HEAP32[$2>>2]|0;HEAP32[$$byval_copy3+4>>2]=HEAP32[$2+4>>2]|0;
+ _InitializePlayer(228,$$byval_copy,$$byval_copy3,21);
+ _StopMusicStream();
+ ;HEAP32[$$byval_copy3>>2]=HEAP32[(568)>>2]|0;HEAP32[$$byval_copy3+4>>2]=HEAP32[(568)+4>>2]|0;
+ _UpdateTrianglesPosition($$byval_copy3);
+ _UpdateTrianglesState();
+ ;HEAP32[$$byval_copy3>>2]=HEAP32[(568)>>2]|0;HEAP32[$$byval_copy3+4>>2]=HEAP32[(568)+4>>2]|0;
+ _UpdatePlatformsPosition($$byval_copy3);
+ _UpdatePlatformsState();
+ $19 = HEAP32[216>>2]|0;
+ $20 = ($19|0)>(0);
+ if ($20) {
+  $21 = HEAP32[224>>2]|0;
+  $22 = HEAP32[216>>2]|0;
+  $i$04 = 0;
+  while(1) {
+   $27 = (((($21) + (($i$04*40)|0)|0)) + 36|0);
+   $28 = HEAP32[$27>>2]|0;
+   $29 = ($28|0)==(0);
+   if (!($29)) {
+    HEAP32[$27>>2] = 0;
+   }
+   $30 = (($i$04) + 1)|0;
+   $31 = ($30|0)<($22|0);
+   if ($31) {
+    $i$04 = $30;
+   } else {
+    break;
+   }
   }
  }
+ $23 = HEAP32[212>>2]|0;
+ $24 = ($23|0)>(0);
+ if (!($24)) {
+  STACKTOP = sp;return;
+ }
+ $25 = HEAP32[220>>2]|0;
+ $26 = HEAP32[212>>2]|0;
+ $i1$03 = 0;
+ while(1) {
+  $32 = (((($25) + (($i1$03*56)|0)|0)) + 52|0);
+  $33 = HEAP32[$32>>2]|0;
+  $34 = ($33|0)==(0);
+  if (!($34)) {
+   HEAP32[$32>>2] = 0;
+  }
+  $35 = (($i1$03) + 1)|0;
+  $36 = ($35|0)<($26|0);
+  if ($36) {
+   $i1$03 = $35;
+  } else {
+   break;
+  }
+ }
+ STACKTOP = sp;return;
 }
 function _InitEndingScreen() {
  var label = 0, sp = 0;
