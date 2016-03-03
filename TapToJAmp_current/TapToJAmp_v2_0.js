@@ -93,6 +93,11 @@ Module.expectedDataFileDownloads++;
     function assert(check, msg) {
       if (!check) throw msg + new Error().stack;
     }
+Module['FS_createPath']('/', 'assets', true, true);
+Module['FS_createPath']('/assets', 'gameplay', true, true);
+Module['FS_createPath']('/assets/gameplay', 'character', true, true);
+Module['FS_createPath']('/assets', 'logo', true, true);
+Module['FS_createPath']('/assets', 'title', true, true);
 
     function DataRequest(start, end, crunched, audio) {
       this.start = start;
@@ -172,7 +177,7 @@ Module.expectedDataFileDownloads++;
   }
 
  }
- loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 107204, "filename": "/resources"}], "remote_package_size": 107204, "package_uuid": "7e48eac1-7c94-4ffc-9a66-27b27e9342c2"});
+ loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 736, "filename": "/assets/gameplay/platf_main.png"}, {"audio": 0, "start": 736, "crunched": 0, "end": 2292, "filename": "/assets/gameplay/tri_main.png"}, {"audio": 0, "start": 2292, "crunched": 0, "end": 2949, "filename": "/assets/gameplay/character/main_cube.png"}, {"audio": 0, "start": 2949, "crunched": 0, "end": 4322, "filename": "/assets/logo/PixelBar_Logo.png"}, {"audio": 0, "start": 4322, "crunched": 0, "end": 8583, "filename": "/assets/title/TapToJAmp_Title.png"}], "remote_package_size": 8583, "package_uuid": "bf5d83de-c4b3-4a22-9be5-9c290141e749"});
 
 })();
 
