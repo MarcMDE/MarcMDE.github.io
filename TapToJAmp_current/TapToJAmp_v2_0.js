@@ -178,7 +178,7 @@ Module['FS_createPath']('/', 'maps', true, true);
   }
 
  }
- loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 483, "filename": "/assets/gameplay/particle_dead.png"}, {"audio": 0, "start": 483, "crunched": 0, "end": 970, "filename": "/assets/gameplay/particle_main.png"}, {"audio": 0, "start": 970, "crunched": 0, "end": 1706, "filename": "/assets/gameplay/platf_main.png"}, {"audio": 0, "start": 1706, "crunched": 0, "end": 3262, "filename": "/assets/gameplay/tri_main.png"}, {"audio": 0, "start": 3262, "crunched": 0, "end": 3919, "filename": "/assets/gameplay/character/main_cube.png"}, {"audio": 0, "start": 3919, "crunched": 0, "end": 5292, "filename": "/assets/logo/PixelBar_Logo.png"}, {"audio": 0, "start": 5292, "crunched": 0, "end": 9553, "filename": "/assets/title/TapToJAmp_Title.png"}, {"audio": 0, "start": 9553, "crunched": 0, "end": 36319, "filename": "/maps/map.psd"}, {"audio": 0, "start": 36319, "crunched": 0, "end": 76375, "filename": "/maps/map_01.bmp"}, {"audio": 0, "start": 76375, "crunched": 0, "end": 108431, "filename": "/maps/map_02.bmp"}], "remote_package_size": 108431, "package_uuid": "0e653465-a5af-45a0-b9ce-496d4e7c00a6"});
+ loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 483, "filename": "/assets/gameplay/particle_dead.png"}, {"audio": 0, "start": 483, "crunched": 0, "end": 970, "filename": "/assets/gameplay/particle_main.png"}, {"audio": 0, "start": 970, "crunched": 0, "end": 1706, "filename": "/assets/gameplay/platf_main.png"}, {"audio": 0, "start": 1706, "crunched": 0, "end": 3262, "filename": "/assets/gameplay/tri_main.png"}, {"audio": 0, "start": 3262, "crunched": 0, "end": 3919, "filename": "/assets/gameplay/character/main_cube.png"}, {"audio": 0, "start": 3919, "crunched": 0, "end": 5292, "filename": "/assets/logo/PixelBar_Logo.png"}, {"audio": 0, "start": 5292, "crunched": 0, "end": 9553, "filename": "/assets/title/TapToJAmp_Title.png"}, {"audio": 0, "start": 9553, "crunched": 0, "end": 36319, "filename": "/maps/map.psd"}, {"audio": 0, "start": 36319, "crunched": 0, "end": 76375, "filename": "/maps/map_01.bmp"}, {"audio": 0, "start": 76375, "crunched": 0, "end": 108431, "filename": "/maps/map_02.bmp"}], "remote_package_size": 108431, "package_uuid": "eef6f298-27e9-479c-bbbc-84a3cde9fef4"});
 
 })();
 
@@ -10289,8 +10289,8 @@ function _main() {
  var label = 0, sp = 0;
  sp = STACKTOP;
  _InitWindow(1024,576,7604);
- _InitTitleScreen();
- HEAP32[792>>2] = 2;
+ _InitLoadingScreen();
+ HEAP32[792>>2] = 0;
  _emscripten_set_main_loop((1|0),0,1);
  _CloseWindow();
  return 0;
