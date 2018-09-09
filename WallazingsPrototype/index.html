@@ -58,7 +58,7 @@
       div.emscripten_border { border: 1px solid black; }
       
       /* the canvas *must not* have any border or padding, or mouse coords will be wrong */
-      canvas.emscripten { border: 0px none; background: black; width: 650px }
+      canvas.emscripten { border: 0px none; background: black; width: 100% }
       
       #emscripten_logo {
         display: inline-block;
@@ -153,11 +153,56 @@
         </div>
     </div>
     
-    <div class="emscripten_border">
-      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+    <div class="emscripten_border" style='background-color:#F0F8FF'>
+        <table style='width:100%;'>
+            <tr>
+                <td style='width: 38%'>
+                    <h3> Como jugar: </h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <p>
+                                    - Click en la pantalla para seleccionar la trayectoria.<br><br>
+                                    - La pelota seguirá la trayectoria marcada una vez llegue al borde.<br><br>
+                                    - El juego termina cuando la pantalla se pone en negro (has perdido) o cuando llegas a los "hops" necesarios (has ganado).<br><br>
+                                    - Se muestran los hops en el borde superior derecho. Un hop consiste en pasar de un lado al otro de la pantalla, sin chocar con la pared.<br><br>
+                                    - La "pared" son los bloques de color verde. Si colisionas con una pared, la pelota volverá hacia atrás.<br><br>
+                                    - Los cristales son todos los bloques que no son de color verde. Debes pasar por en medio de los cristales para conseguir hops.<br><br>
+                                    - La pantalla se va haciendo negra a medida que pierdes puntos. Pierdes X puntos por segundo.<br><br>
+                                    - Pasar por los cristales te otorga puntos, necesario para alargar el tiempo de juego hasta conseguir todos los hops. <br><br>
+                                    - La pelota siempre tarda el mismo tiempo en ir de un lado a otro de la pantalla, independientemente de la trayectoria.<br><br>
+                                    - Pasar por un cristal mas de una vez, otorga puntos extra. Debes pasar el máximo de veces posibles por un mismo cristal.<br><br>
+                                    - Una vez pasas por un cristal, este queda inactivo hasta que pases por otro cistal distinto. Debes alternar los cristales por los que pasas, pero recuerda, 
+                                    debes pasar todas las veces que puedas por un mismo cristal para conseguir el máximo número de puntos. <br>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style='width: 34%'>
+                    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+                </td>
+                <td style='width: 28%'>
+                    <p>
+                        <h3>Recomiendo jugar a pantalla completa</h3>
+                        - Para hacerlo pulsar botón "Fullscreen" que se encuentra en la parte superior derecha.
+                        <hr>
+                        <br>
+                        <h3>Bloques especiales:</h3>
+                        <b>- Cristal especial:</b> Los cristales con un número en el centro otorgan una bonificación de velocidad según las veces que hayas pasado por ellos. (A partir del nivel 4)
+                        <hr>
+                        <br>
+                        - Para feedback, sugerencias, ideas, criticas o simplemente para comentar tu experiéncia de juego, pudes enviar un mail a: <b> marcmde95@gmail.com</b>
+                        <hr>
+                        <br>
+                        - Esto es solo un prototipo para juguetear con la mecánica ideada y no es representativo de la experiéncia que se pretende conseguir con el juego final. 
+                    </p>
+                </td>
+            </tr>
+        </table>
     </div>
     
-    <textarea id="output" rows="8"></textarea>
+   <!-- <textarea id="output" rows="8"></textarea> -->
 
     <script type='text/javascript'>
       var statusElement = document.getElementById('status');
