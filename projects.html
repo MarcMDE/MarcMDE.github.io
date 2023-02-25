@@ -7,18 +7,30 @@
 
     <title>MarcMDE's website</title>
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
     <!-- Bootstrap (style) CDN-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- Bootstrap (icons) CDN-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Font awesome icons -->
+    <script src="https://kit.fontawesome.com/59c15df2f2.js" crossorigin="anonymous"></script>
 
-    <script src="code.js" ></script>
+    <link href="common.css" rel="stylesheet">
+    <script src="common.js" ></script>
     <link href="style.css" rel="stylesheet">
+    <link href="media_bar.css" rel="stylesheet">
     
   </head>
-  <body onload="onPageLoad()">
+  <body onload="onPageLoad()" class="text-bg-dark">
     
     <header>
+      <!-- Dynamicaly loaded content -->
+      <div id="dyn-media-bar"></div>
     </header>
 
     <main>
@@ -122,12 +134,9 @@
     <footer class="text-muted py-3">
       <div class="container">
         <p class="float-end mb-1">
-          <!-- TODO: Move style to its own file -->
           <a href="#">Go up <i class="bi bi-caret-up" style="font-size: 2rem; color: cornflowerblue;"></i></a>
         </p>
-        <p class="mb-1">Copyright &copy; 2023 Marc Montagut Llauradó.</p>
-        <!-- TODO: Contact -->
-        <p class="mb-0">Contact me: ...</p>
+        <span id="dyn-footer"><!-- Content loaded dynamically --></span>
       </div>
     </footer>
 

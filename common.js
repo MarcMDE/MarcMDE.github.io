@@ -14,6 +14,8 @@ function addDynamicContent()
 function addMediaBar()
 {
     mediaBar = document.getElementById("dyn-media-bar");
+    if (mediaBar == null) return;
+
     mediaBar.innerHTML=`
     <div class="media-bar py-3">   
         <a href="https://www.linkedin.com/in/marcmde/" target="_blank" class="link-light fa-brands fa-linkedin"></a>
@@ -27,16 +29,18 @@ function addMediaBar()
 function addFooter()
 {
     footer = document.getElementById("dyn-footer");
+    if (footer == null) return;
+
     footer.innerHTML=`
-    <div class="container py-3 fixed-footer">
-        <p class="mb-1">Contact me: <a href = "mailto: marcmde95@gmail.com">marcmde95@gmail.com</a></p>
-        <p class="mb-0 text-secondary">Copyright &copy; 2023 Marc Montagut Llauradó</p>
-    </div>`
+    <p class="mb-1">Contact me: <a href = "mailto: marcmde95@gmail.com">marcmde95@gmail.com</a></p>
+    <p class="mb-0 text-secondary">Copyright &copy; 2023 Marc Montagut Llauradó</p>`
 }
 
 function faderFadeOut()
 {
     fader = document.getElementById("fader");
+    if (fader == null) return;
+
     fader.addEventListener('transitionend', () => {
         console.log("t end");
         fader.classList.remove("fadeOut");
