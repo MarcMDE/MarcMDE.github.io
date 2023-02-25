@@ -1,0 +1,18 @@
+/* Things I didn't remember about CSS */
+
+
+/*Fade element animation*/
+#fader {
+animation: fadeOutAnimation ease 3s;
+animation-delay: 0.2s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+@keyframes fadeOutAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
