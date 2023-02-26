@@ -4,6 +4,9 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+
+  object-fit: contain;
+  aspect-ratio: 16 / 9;
 }
 
 @media (min-width: 768px) {
