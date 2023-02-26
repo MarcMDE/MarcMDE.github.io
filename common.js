@@ -17,7 +17,7 @@ function addMediaBar()
     if (mediaBar == null) return;
 
     mediaBar.innerHTML=`
-    <div class="media-bar py-3">   
+    <div class="media-bar main-media-bar py-3">   
         <a href="https://www.linkedin.com/in/marcmde/" target="_blank" class="link-light fa-brands fa-linkedin"></a>
         <a href="https://www.youtube.com/@marcmdeyt" target="_blank" class="link-light fa-brands fa-youtube"></a>
         <a href="https://marcmde.itch.io/" target="_blank" class="link-light fa-brands fa-itch-io"></a>

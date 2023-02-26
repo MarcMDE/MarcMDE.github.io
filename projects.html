@@ -27,6 +27,7 @@
     <link href="footer.css" rel="stylesheet">
     <link href="media_bar.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <link href="projects.css" rel="stylesheet">
 
     <!-- JS -->
     <script src="common.js"></script>
@@ -40,8 +41,8 @@
       
       <section class="py-1 text-center container">
           <div class="mx-auto">
-            <h1>Projects</h1>
-            <p>Take a look at some of my beloved personal projects</p>
+            <h1 class="title">Projects</h1>
+            <p class="secondary-text">Take a look at some of my beloved personal projects</p>
         </div>
       </section>
 
@@ -53,47 +54,60 @@
           <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-1">
             <div class="col">
               <div class="card shadow-sm">
-                <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
-                <img src="images/roots_up.png" class="bd-placeholder-img card-img-top" alt="" width="100%"></img>
+                <div class="card-img-container">
+                  <img src="images/roots_up.png" class="bd-placeholder-img card-img-top" alt="" width="100%"></img>
+                  <p class="title">Root's up</h2>
+                </div>
                 <div class="card-body">
-                  <p class="card-text">Root's up</p>
-                  <p class="card-text">A videogame created in 48h (by 5 devs) during the Global Game Jam 2023. We used the Unity engine. The whole map consists in 8 procedurally generated interconnected chunks (mesh computed using the marching cubes algorithm) that simulate an infinite looping world.</p>
+                  <p>A videogame developed in 48h (by 5 devs) during the Global Game Jam 2023. We used the Unity engine. The whole map consists in 8 procedurally generated interconnected chunks of roots (mesh computed using the marching cubes algorithm) that simulate an infinite looping world.</p>
                   <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <div class="media-bar min-media-bar">
+                      <a href="https://marcmde.itch.io/roots-up" target="_blank" class="link-light fa-brands fa-itch-io"></a>
+                      <a href="https://youtu.be/FTOSxM_rJPw" target="_blank" class="link-light fa-brands fa-youtube"></a>
+                      <a href="https://github.com/MarcMDE/GGJ23" target="_blank" class="link-light fa-brands fa-github"></a>
+                      <a href="https://globalgamejam.org/2023/games/rootswalkingsim-7" target="_blank" class="link-light fa-solid fa-globe"></a>
                     </div>
-                    <small class="text-muted">2023</small>
+                    <small class="secondary-text">2023</small>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-img-container">
+                  <img src="images/blobs_n_gulps.png" class="bd-placeholder-img card-img-top" alt="" width="100%"></img>
+                  <p class="title">Blobs & Gulps</h2>
+                </div>
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p>A videogame developed in 48h (by 5 devs) during the Global Game Jam 2023. We used the Unity engine. The whole map consists in 8 procedurally generated interconnected chunks of roots (mesh computed using the marching cubes algorithm) that simulate an infinite looping world.</p>
                   <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <div class="media-bar min-media-bar">
+                      <a href="https://marcmde.itch.io/roots-up" target="_blank" class="link-light fa-brands fa-itch-io"></a>
+                      <a href="https://youtu.be/FTOSxM_rJPw" target="_blank" class="link-light fa-brands fa-youtube"></a>
+                      <a href="https://github.com/MarcMDE/GGJ23" target="_blank" class="link-light fa-brands fa-github"></a>
+                      <a href="https://globalgamejam.org/2023/games/rootswalkingsim-7" target="_blank" class="link-light fa-solid fa-globe"></a>
                     </div>
-                    <small class="text-muted">9 mins</small>
+                    <small class="secondary-text">2023</small>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-img-container">
+                  <img src="images/leak_point.png" class="bd-placeholder-img card-img-top" alt="" width="100%"></img>
+                  <p class="title">Leak Point</h2>
+                </div>
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p>A videogame developed in 48h (by 5 devs) during the Global Game Jam 2023. We used the Unity engine. The whole map consists in 8 procedurally generated interconnected chunks of roots (mesh computed using the marching cubes algorithm) that simulate an infinite looping world.</p>
                   <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <div class="media-bar min-media-bar">
+                      <a href="https://marcmde.itch.io/roots-up" target="_blank" class="link-light fa-brands fa-itch-io"></a>
+                      <a href="https://youtu.be/FTOSxM_rJPw" target="_blank" class="link-light fa-brands fa-youtube"></a>
+                      <a href="https://github.com/MarcMDE/GGJ23" target="_blank" class="link-light fa-brands fa-github"></a>
+                      <a href="https://globalgamejam.org/2023/games/rootswalkingsim-7" target="_blank" class="link-light fa-solid fa-globe"></a>
                     </div>
-                    <small class="text-muted">9 mins</small>
+                    <small class="secondary-text">2023</small>
                   </div>
                 </div>
               </div>
@@ -101,30 +115,80 @@
 
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-img-container">
+                  <img src="images/tap_to_jamp.png" class="bd-placeholder-img card-img-top" alt="" width="100%"></img>
+                  <p class="title">Tap To JAmp</h2>
+                </div>
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p>A videogame developed in 48h (by 5 devs) during the Global Game Jam 2023. We used the Unity engine. The whole map consists in 8 procedurally generated interconnected chunks of roots (mesh computed using the marching cubes algorithm) that simulate an infinite looping world.</p>
                   <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <div class="media-bar min-media-bar">
+                      <a href="https://marcmde.itch.io/roots-up" target="_blank" class="link-light fa-brands fa-itch-io"></a>
+                      <a href="https://youtu.be/FTOSxM_rJPw" target="_blank" class="link-light fa-brands fa-youtube"></a>
+                      <a href="https://github.com/MarcMDE/GGJ23" target="_blank" class="link-light fa-brands fa-github"></a>
+                      <a href="https://globalgamejam.org/2023/games/rootswalkingsim-7" target="_blank" class="link-light fa-solid fa-globe"></a>
                     </div>
-                    <small class="text-muted">9 mins</small>
+                    <small class="secondary-text">2023</small>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-img-container">
+                  <img src="images/aethereal_gear.png" class="bd-placeholder-img card-img-top" alt="" width="100%"></img>
+                  <p class="title">Aethereal Gear</h2>
+                </div>
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p>A videogame developed in 48h (by 5 devs) during the Global Game Jam 2023. We used the Unity engine. The whole map consists in 8 procedurally generated interconnected chunks of roots (mesh computed using the marching cubes algorithm) that simulate an infinite looping world.</p>
                   <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <div class="media-bar min-media-bar">
+                      <a href="https://marcmde.itch.io/roots-up" target="_blank" class="link-light fa-brands fa-itch-io"></a>
+                      <a href="https://youtu.be/FTOSxM_rJPw" target="_blank" class="link-light fa-brands fa-youtube"></a>
+                      <a href="https://github.com/MarcMDE/GGJ23" target="_blank" class="link-light fa-brands fa-github"></a>
+                      <a href="https://globalgamejam.org/2023/games/rootswalkingsim-7" target="_blank" class="link-light fa-solid fa-globe"></a>
                     </div>
-                    <small class="text-muted">9 mins</small>
+                    <small class="secondary-text">2023</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="card-img-container">
+                  <img src="images/aethereal_gear.png" class="bd-placeholder-img card-img-top" alt="" width="100%"></img>
+                  <p class="title">SAT collisions</h2>
+                </div>
+                <div class="card-body">
+                  <p>A videogame developed in 48h (by 5 devs) during the Global Game Jam 2023. We used the Unity engine. The whole map consists in 8 procedurally generated interconnected chunks of roots (mesh computed using the marching cubes algorithm) that simulate an infinite looping world.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="media-bar min-media-bar">
+                      <a href="https://marcmde.itch.io/roots-up" target="_blank" class="link-light fa-brands fa-itch-io"></a>
+                      <a href="https://youtu.be/FTOSxM_rJPw" target="_blank" class="link-light fa-brands fa-youtube"></a>
+                      <a href="https://github.com/MarcMDE/GGJ23" target="_blank" class="link-light fa-brands fa-github"></a>
+                      <a href="https://globalgamejam.org/2023/games/rootswalkingsim-7" target="_blank" class="link-light fa-solid fa-globe"></a>
+                    </div>
+                    <small class="secondary-text">2023</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="card-img-container">
+                  <img src="images/aethereal_gear.png" class="bd-placeholder-img card-img-top" alt="" width="100%"></img>
+                  <p class="title">MarcMDE's website</h2>
+                </div>
+                <div class="card-body">
+                  <p>A videogame developed in 48h (by 5 devs) during the Global Game Jam 2023. We used the Unity engine. The whole map consists in 8 procedurally generated interconnected chunks of roots (mesh computed using the marching cubes algorithm) that simulate an infinite looping world.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="media-bar min-media-bar">
+                      <a href="https://marcmde.itch.io/roots-up" target="_blank" class="link-light fa-brands fa-itch-io"></a>
+                      <a href="https://youtu.be/FTOSxM_rJPw" target="_blank" class="link-light fa-brands fa-youtube"></a>
+                      <a href="https://github.com/MarcMDE/GGJ23" target="_blank" class="link-light fa-brands fa-github"></a>
+                      <a href="https://globalgamejam.org/2023/games/rootswalkingsim-7" target="_blank" class="link-light fa-solid fa-globe"></a>
+                    </div>
+                    <small class="secondary-text">2023</small>
                   </div>
                 </div>
               </div>
@@ -135,7 +199,7 @@
 
     </main>
 
-    <footer class="text-muted py-3">
+    <footer class="py-3">
       <div class="container">
         <p class="float-end mb-1">
           <a href="#">Go up <i class="bi bi-caret-up" style="font-size: 2rem; color: cornflowerblue;"></i></a>
@@ -143,6 +207,9 @@
         <span id="dyn-footer"><!-- Content loaded dynamically --></span>
       </div>
     </footer>
+
+    <!-- Fading div -->
+    <div id="fader"></div>
 
     <!-- Bootstrap (JS) CDN, must be right before </body> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
