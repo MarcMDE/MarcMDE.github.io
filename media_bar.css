@@ -9,12 +9,13 @@
 }
 
 .min-media-bar {
+    margin-left: -0.3em;
     font-size: 1.3rem; 
     text-align: left;
 }
 
 .media-bar a {
-    margin: 0 0 0.3em 0.3em;
+    margin: 0;
     width: 2.0em;
     text-align: center;
     text-decoration: none;

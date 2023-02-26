@@ -2,12 +2,12 @@
     position: absolute;
     bottom: -0.5rem;
     left: 0.7rem;
-    
+
     pointer-events: none;
 }
 
 .card {
-    background-color: rgb(16, 16, 16);
+    background-color: rgb(32, 32, 32);
 }
 
 .card-img-container {
@@ -27,7 +27,7 @@
     transition: opacity 0.6s; 
 }
 .card-img-container img:hover {
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 
@@ -35,3 +35,25 @@
 
     text-shadow: none;
 }
+
+.tech-container{
+    display: flex;
+}
+
+.tech-container div {
+
+    font-size: small;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 0.3rem;
+
+    text-align: center;
+
+
+
+    background-color: rgb(13, 22, 34);
+    /*border: 1px solid rgb(11, 46, 92);*/
+    /*border-radius: 1px;*/
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
