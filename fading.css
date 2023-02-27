@@ -9,6 +9,8 @@
   
     opacity: 1;
     transition: opacity 1s; 
+
+    pointer-events: none;
   }
   
   #fader.fadeOut {
