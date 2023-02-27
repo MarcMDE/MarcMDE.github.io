@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Marc Montagut Llauradó">
+
+    <title>MarcMDE's website</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <!-- Bootstrap (style) CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Bootstrap (icons) CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Font awesome icons -->
+    <script src="https://kit.fontawesome.com/59c15df2f2.js" crossorigin="anonymous"></script>
+
+
+    <!-- CSS -->
+    <link href="common.css" rel="stylesheet">
+    <link href="fading.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+    <link href="media_bar.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="projects.css" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="common.js"></script>
+    
+  </head>
+  <body onload="onPageLoad()" class="text-bg-dark min-vh-100">
+    
+    <header>
+      <!-- Dynamicaly loaded content -->
+      <div id="dyn-media-bar"></div>
+      
+      <section class="py-1 text-center container">
+          <div class="mx-auto">
+            <h1 class="title">Courses & Books</h1>
+            <p class="secondary-text">The most relevant books and courses I have completed</p>
+        </div>
+      </section>
+
+    </header>
+
+    <main>
+        <div class="album py-3">
+            <div class="container">
+                <div class="row row-cols-1 g-1 text-center">
+                    <div class="col">
+                        <div class="course py-3">
+                            <a class="title" href="https://www.udemy.com/share/101XWK3@LtCjSDrXrO84s7iXQ02a64jXdIqAdKPhgmkCfGjcAMFwyYxCcjZuv34jq-rxXXRXOg==/">
+                                RPG Core Combat Creator: Learn Intermediate Unity C# Coding
+                            </a>
+                            <p>A very complete Unity course, highly recommended.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="course py-3">
+                            <a class="title" href="https://www.udemy.com/course/unityrpg/">
+                                Unreal Engine 5 C++ Developer: Learn C++ & Make Video Games
+                            </a>
+                            <p>
+                                A great introduction to Unreal Engine 5 (It covers very basic programming
+                                concepts during the initial lessons, speeding up is your friend).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="course py-3">
+                            <a class="title" href="https://www.jettelly.com/books/unity-shaders-bible/">
+                                The Unity Shaders Bible
+                            </a>
+                            <p>
+                                Tons of great content. Perfect if you already have at least a basic 
+                                understanding of shaders 
+                                (I haven't finished it yet <i class="fa-regular fa-face-grin-beam-sweat"></i>).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="py-5">
+    </div>
+    
+    <footer class="py-3">
+      <div class="container">
+        <!--
+        <p class="float-end mb-1">
+          <a href="#">Go up <i class="bi bi-caret-up" style="font-size: 2rem; color: cornflowerblue;"></i></a>
+        </p>
+        -->
+        <span id="dyn-footer" class="text-center py-5"><!-- Content loaded dynamically --></span>
+      </div>
+    </footer>
+
+    <!-- Fading div -->
+    <div id="fader"></div>
+
+    <!-- Bootstrap (JS) CDN, must be right before </body> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
