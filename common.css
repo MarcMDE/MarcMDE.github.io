@@ -8,6 +8,31 @@ body {
   font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
+.home-button{
+  position: fixed;
+
+  font-size: min(6.0vw, 2.5em);
+  
+  text-align: center;
+
+  opacity: 0.6;
+
+  bottom: 0.3em;
+  left: 0.5em;
+
+  transition-duration: 0.3s;
+}
+
+.home-button:hover {
+  opacity: 1;
+  transform: scale(1.5);
+}
+
+.home-button a{
+  color: white;
+  text-decoration: none;
+}
+
 .title, .button {
     font-weight: 300;
     letter-spacing: .2rem;
