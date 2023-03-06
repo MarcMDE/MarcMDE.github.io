@@ -1,3 +1,6 @@
+@import url("common.css");
+@import url("style.css");
+
 .card-img-container .title{
     position: absolute;
     bottom: -0.5rem;
