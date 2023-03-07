@@ -2,20 +2,43 @@
 @import url("media_bar.css");
 @import url("fading.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
 :root {
   --main-bg-color: rgb(40, 40, 40);
   --main-color: rgb(240, 240, 240);
-  --secondary-color: rgb(190, 190, 190);
+  --secondary-color: rgb(180, 180, 180);
+  --note-color: rgb(119, 125, 133);
+  --warning-color: rgb(136, 139, 120);
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
 }
 
 body {
+  margin: 0;
+
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 
   color: var(--main-color);
   background-color: var(--main-bg-color);
 
-  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+header{
+  margin-top: 1.5em;
+}
+
+footer{
+  margin-bottom: 1.5em;
 }
 
 .home-button{
@@ -48,6 +71,14 @@ body {
     letter-spacing: .2rem;
   }
 
-.secondary-text {
-  color:var(--secondary-color);
+.text-secondary {
+  color: var(--secondary-color) !important;
+}
+
+.text-warning {
+  color: var(--warning-color) !important;
+}
+
+.text-note {
+  color: var(--note-color) !important;
 }

@@ -32,8 +32,8 @@ function addFooter()
     if (footer == null) return;
 
     footer.innerHTML=`
-    <p class="mb-1">Contact me: <a href = "mailto: marcmde95@gmail.com">marcmde95@gmail.com</a></p>
-    <p class="mb-0 text-secondary">Copyright &copy; 2023 Marc Montagut Llauradó</p>`
+    <p>Contact me: <a href = "mailto: marcmde95@gmail.com">marcmde95@gmail.com</a></p>
+    <p class="text-note">Copyright &copy; 2023 Marc Montagut Llauradó</p>`
 }
 
 function faderFadeOut()

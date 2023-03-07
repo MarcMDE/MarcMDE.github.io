@@ -1,11 +1,9 @@
 .media-bar {
     font-size: min(6.0vw, 2.5em); 
-    text-align: center!important;
 }
 
 .main-media-bar {
     font-size: min(6.0vw, 2.5em); 
-    text-align: center!important;
 }
 
 .min-media-bar {
@@ -15,6 +13,7 @@
 }
 
 .media-bar a {
+    color: inherit;
     margin: 0;
     width: 2.0em;
     text-align: center;

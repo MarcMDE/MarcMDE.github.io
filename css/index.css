@@ -1,7 +1,37 @@
 @import url("common.css");
 
-.fheader {
-    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+
+.cover-title {
+  
+  text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+}
+
+.cover-title h1{
+  letter-spacing: 0.1em;
+  font-size: min(15vw, 6em); 
+  font-weight: 200;
+}
+
+.cover-title h2{
+  font-size: min(6vw, 2.2em); 
+  font-weight: 300;
+}
+
+.cover-container {
+  height: 100vh;
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-items: center;
+}
+
+.nav-buttons{
+  margin: 2em 0em 0em;
+}
+
+main{
+  overflow: hidden;
+  padding: 0em 0em 6em;
 }
 
 .button{
