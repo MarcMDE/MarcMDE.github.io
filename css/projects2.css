@@ -1,0 +1,90 @@
+@import url("common.css");
+@import url("style.css");
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+
+    margin-bottom: 5em;
+}
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    width: 400px;
+
+    /*background-color: rgb(32, 32, 32);*/
+
+    /*box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;*/
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.card-img-container {
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+}
+
+.card-img-container img {
+    width: 100%;
+}
+
+.card-body-container {
+    text-align: left;
+    width: 100%;
+}
+
+.card-img-container .title{
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0.7rem;
+
+    pointer-events: none;
+}
+
+/*
+.card-img-container:hover{
+    font-size: 2.4rem;
+}
+
+.card-img-container img {
+    opacity: 1;
+    transition: opacity 0.6s; 
+}
+.card-img-container img:hover {
+    opacity: 0.4;
+}
+*/
+
+.card-body p{
+
+    text-shadow: none;
+}
+
+.tech-container{
+    display: flex;
+}
+
+.tech-container div {
+
+    font-size: small;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 0.3rem;
+
+    text-align: center;
+
+
+
+    background-color: rgb(13, 22, 34);
+    /*border: 1px solid rgb(11, 46, 92);*/
+    /*border-radius: 1px;*/
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
