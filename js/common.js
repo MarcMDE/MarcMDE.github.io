@@ -3,12 +3,27 @@ function onPageLoad()
 {
     addDynamicContent();
     faderFadeOut();
+
+    addFakes();
 }
 
 function addDynamicContent()
 {
     addMediaBar();
     addFooter();
+
+}
+
+function calcNumFakes(flexContainer)
+{
+    /*https://stackoverflow.com/questions/49043684/how-to-calculate-the-amount-of-flexbox-items-in-a-row*/
+    const grid = Array.from(flexContainer.children);
+    const baseOffset = grid[0].offsetTop;
+    const breakIndex = grid.findIndex(item => item.offsetTop > baseOffset);
+    const numPerRow = (breakIndex === -1 ? grid.length : breakIndex);
+    let nFakes = numPerRow - grid.length % numPerRow;
+    if (nFakes == numPerRow) nFakes = 0;
+    return nFakes;
 }
 
 function addMediaBar()
@@ -48,3 +63,33 @@ function faderFadeOut()
       });
     fader.classList.add("fadeOut");
 }
+
+// 
+let fakes = []
+
+function addFakes(){
+    flexContainer = document.querySelector(".card-container");
+    nFakesToAdd = calcNumFakes(flexContainer);
+
+    for(let i=0; i<nFakesToAdd; i++)
+    {
+        const fake = document.createElement('div');
+        fake.classList.add('card-fake');
+        flexContainer.appendChild(fake);
+        fakes.push(fake);
+    }
+}
+
+function delFakes(){
+    for(let i=0; i<fakes.length; i++)
+    {
+        fakes[i].remove();
+    }
+
+    fakes = [];
+}
+
+window.addEventListener('resize', () => {
+    delFakes();
+    addFakes();
+}, true);

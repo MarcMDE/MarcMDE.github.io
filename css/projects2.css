@@ -10,20 +10,27 @@
     margin-bottom: 5em;
 }
 
-
-
 .card {
+    flex-grow: 1;
+    flex-basis: 400px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 
-    width: 400px;
-
+    /*width: 400px;*/
     /*background-color: rgb(32, 32, 32);*/
-
     /*box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;*/
+
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.card-fake {
+    flex-grow: 1;
+    flex-basis: 400px;
+    height: 10px;
+    /*border-style: solid;*/
 }
 
 .card-img-container {
