@@ -3,14 +3,14 @@ function onPageLoad()
 {
     addDynamicContent();
     faderFadeOut();
-
-    addFakes();
 }
 
 function addDynamicContent()
 {
     addMediaBar();
     addFooter();
+    loadProjects();
+    addFakes();
 
 }
 
@@ -93,3 +93,81 @@ window.addEventListener('resize', () => {
     delFakes();
     addFakes();
 }, true);
+
+projectsData = [
+    {
+        name: "Root's up",
+        img: "roots_up.png",
+        desc: `A videogame developed in 48h (by 5 devs) 
+        during a Global Game Jam. The whole map consists 
+        in 8 procedurally generated interconnected chunks 
+        of roots (mesh computed using 
+        <a href="https://en.wikipedia.org/wiki/Marching_cubes" target="_blank">marching cubes</a>
+        ) that simulate an infinite looping world.`,
+        year: "2023",
+        tech: ["C#", "Unity"],
+        media: {
+            itchio: "",
+            youtube: "",
+            github: "",
+            webpage: ""
+        }
+    },
+    {
+        name: "Root's up",
+        img: "roots_up.png",
+        desc: `A videogame developed in 48h (by 5 devs) 
+        during a Global Game Jam. The whole map consists 
+        in 8 procedurally generated interconnected chunks 
+        of roots (mesh computed using 
+        <a href="https://en.wikipedia.org/wiki/Marching_cubes" target="_blank">marching cubes</a>
+        ) that simulate an infinite looping world.`,
+        year: "2023",
+        tech: ["C#", "Unity"],
+        media: {
+            itchio: "",
+            youtube: "",
+            github: "",
+            webpage: ""
+        }
+    },
+    {
+        name: "Root's up",
+        img: "roots_up.png",
+        desc: `A videogame developed in 48h (by 5 devs) 
+        during a Global Game Jam. The whole map consists 
+        in 8 procedurally generated interconnected chunks 
+        of roots (mesh computed using 
+        <a href="https://en.wikipedia.org/wiki/Marching_cubes" target="_blank">marching cubes</a>
+        ) that simulate an infinite looping world.`,
+        year: "2023",
+        tech: ["C#", "Unity"],
+        media: {
+            itchio: "",
+            youtube: "",
+            github: "",
+            webpage: ""
+        }
+    },
+
+];
+
+function loadProjects(){
+    flexContainer = document.querySelector(".card-container");
+    if (flexContainer == null) return;
+    
+    projectsData.forEach(e => {
+        card = document.createElement('div');
+        card.classList.add('card');
+        card.innerHTML= `
+        <div class="card-img-container">
+            <img src="images/${e.img}" alt=""></img>
+        </div>
+        <div class="card-body-container">
+            <p>${e.name}</p>
+            <p>${e.desc}</p>
+        </div>
+        `;
+        flexContainer.appendChild(card);
+    });
+}
