@@ -32,6 +32,24 @@ body {
 
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  font-size: large;
+}
+
+@media (orientation: portrait) {
+  main, header, footer {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+@media (orientation: landscape) {
+  main, header, footer {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+}
+
+body a {
+  color: inherit;
 }
 
 header{
