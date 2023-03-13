@@ -162,9 +162,9 @@ function loadProjects(){
         card.innerHTML= `
         <div class="card-img-container">
             <img src="images/${e.img}" alt=""></img>
+            <p class="title">${e.name}</p>
         </div>
         <div class="card-body-container">
-            <p>${e.name}</p>
             <p>${e.desc}</p>
         </div>
         `;
