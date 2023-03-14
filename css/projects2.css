@@ -35,16 +35,17 @@
 
 .card-img-container {
     position: relative;
-    object-fit: cover;
-    aspect-ratio: 16 / 9;
+
 }
 
 .card-img-container img {
     width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
 }
 
 
-.card-img-container .title{
+.card-img-container .card-title{
     position: absolute;
     bottom: -0.7em;
     left: 0.4em;
@@ -60,8 +61,35 @@
     width: 100%;
 }
 
-.card-body-container p {
+.card-body-container .card-body {
     margin: 0.5em 1em 0.5em 1em;
+}
+
+.card-img-container .card-year {
+    position: absolute;
+    top: 0.0em;
+    right: 0.4em;
+
+    pointer-events: none;
+}
+.tech-container{
+    display: flex;
+}
+.tech-container div {
+
+    font-size: small;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 0.3rem;
+
+    text-align: center;
+
+
+
+    background-color: rgb(13, 22, 34);
+    /*border: 1px solid rgb(11, 46, 92);*/
+    /*border-radius: 1px;*/
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 /*
