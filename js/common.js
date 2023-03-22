@@ -215,14 +215,18 @@ function loadProjects(){
 
                 <div class="media-bar min-media-bar">`
 
-                    projectsHtml += `<a href="${e.media.itchio}" 
-                    target="_blank" class="fa-brands fa-itch-io"></a>`;
-                    projectsHtml += `<a href="${e.media.youtube}" 
-                    target="_blank" class="fa-brands fa-youtube"></a>`;
-                    projectsHtml += `<a href="${e.media.github}" 
-                    target="_blank" class="fa-brands fa-github"></a>`;    
-                    projectsHtml += `<a href="${e.media.webpage}" 
-                    target="_blank" class="fa-solid fa-globe"></a>`;
+                    projectsHtml += (e.media.itchio ? 
+                        `<a href="${e.media.itchio}" target="_blank" 
+                        class="fa-brands fa-itch-io"></a>` : "");
+                    projectsHtml += (e.media.youtube ? 
+                        `<a href="${e.media.youtube}" target="_blank" 
+                        class="fa-brands fa-youtube"></a>` : "");
+                    projectsHtml += (e.media.github ? 
+                        `<a href="${e.media.github}" target="_blank" 
+                        class="fa-brands fa-github"></a>` : "");    
+                    projectsHtml += (e.media.webpage ?
+                        `<a href="${e.media.webpage}" target="_blank" 
+                        class="fa-solid fa-globe"></a>` : "");
         
         projectsHtml +=`
                 </div>`
