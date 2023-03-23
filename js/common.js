@@ -68,14 +68,15 @@ function faderFadeOut()
 let fakes = []
 
 function addFakes(){
-    flexContainer = document.querySelector(".card-container");
-    nFakesToAdd = calcNumFakes(flexContainer);
+    cardContainer = document.querySelector(".card-container");
+    if (cardContainer == null) return;
+    nFakesToAdd = calcNumFakes(cardContainer);
 
     for(let i=0; i<nFakesToAdd; i++)
     {
         const fake = document.createElement('div');
         fake.classList.add('card-fake');
-        flexContainer.appendChild(fake);
+        cardContainer.appendChild(fake);
         fakes.push(fake);
     }
 }
@@ -195,8 +196,8 @@ projectsData = [
 ];
 
 function loadProjects(){
-    flexContainer = document.querySelector(".card-container");
-    if (flexContainer == null) return;
+    cardContainer = document.querySelector(".card-container");
+    if (cardContainer == null) return;
     
     projectsData.forEach(e => {
         card = document.createElement('div');
@@ -243,6 +244,6 @@ function loadProjects(){
         </div>`;
         card.innerHTML = projectsHtml;
 
-        flexContainer.appendChild(card);
+        cardContainer.appendChild(card);
     });
 }
